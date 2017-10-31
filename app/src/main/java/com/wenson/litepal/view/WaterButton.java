@@ -101,6 +101,8 @@ public class WaterButton extends AppCompatImageButton {
         }
     }
 
+
+
     private void clearData() {
         downTime = 0;
         DIFFUSE_GAP = 10;

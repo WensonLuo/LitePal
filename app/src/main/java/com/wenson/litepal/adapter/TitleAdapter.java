@@ -9,6 +9,10 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.wenson.litepal.R;
+import com.wenson.litepal.activity.DeleteActivity;
+import com.wenson.litepal.activity.InsertActivity;
+import com.wenson.litepal.activity.QueryActivity;
+import com.wenson.litepal.activity.UpdateActivity;
 import com.wenson.litepal.bean.TitleBean;
 
 import java.util.ArrayList;
@@ -40,12 +44,16 @@ public class TitleAdapter extends RecyclerView.Adapter<TitleAdapter.ViewHolder> 
                 int position = holder.getAdapterPosition();
                 switch (position){
                     case 0:
+                        QueryActivity.actionStart(mContext);
                         break;
                     case 1:
+                        InsertActivity.actionStart(mContext);
                         break;
                     case 2:
+                        DeleteActivity.actionStart(mContext);
                         break;
                     case 3:
+                        UpdateActivity.actionStart(mContext);
                         break;
                 }
 

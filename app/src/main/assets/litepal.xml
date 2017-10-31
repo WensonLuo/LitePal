@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<litepal>
+    <dbname value = "BookStore"></dbname>
+    <version value ="2"></version>
+    <list>
+        <!--将 Book 添加到映射模型列表当中-->
+        <mapping class = "com.wenson.litepal.bean.Book"></mapping>
+    </list>
+</litepal>
